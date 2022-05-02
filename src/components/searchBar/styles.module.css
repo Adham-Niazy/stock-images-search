@@ -34,6 +34,7 @@
   font-weight: bold;
   background: var(--color-brand);
   border-radius: 0 var(--rad) var(--rad) 0;
+  cursor: pointer;
 }
 .searchInput:not(:placeholder-shown) {
   border-radius: var(--rad) 0 0 var(--rad);
