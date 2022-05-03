@@ -1,6 +1,7 @@
 import { useState } from "react";
 import unsplashConfigInstance from "./axios/unsplash";
 import SearchBar from "./components/searchBar";
+import ImagesList from "./containers/imagesList";
 import "./index.css";
 
 const App = () => {
@@ -23,8 +24,9 @@ const App = () => {
   };
 
   return (
-    <div style={{ padding: "1px" }}>
+    <div style={{ padding: "1px", width: "90%", margin: "auto" }}>
       <SearchBar onSearch={handleSearch} />
+      <ImagesList images={imagesList} />
 
       {totalImages !== 0 && (
         <>
