@@ -15,6 +15,7 @@ const App = () => {
     const response = await unsplashConfigInstance.get("/search/photos", {
       params: {
         query: term,
+        per_page: 30,
       },
     });
 
@@ -27,14 +28,6 @@ const App = () => {
     <div style={{ padding: "1px", width: "90%", margin: "auto" }}>
       <SearchBar onSearch={handleSearch} />
       <ImagesList images={imagesList} />
-
-      {totalImages !== 0 && (
-        <>
-          <span>
-            Page {currentPage} out of {totalPages}
-          </span>
-        </>
-      )}
     </div>
   );
 };

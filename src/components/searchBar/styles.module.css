@@ -1,6 +1,6 @@
 .searchGroup {
   position: relative;
-  margin: 30px auto 0;
+  margin: auto 0;
   background: var(--color-brand);
   border-radius: var(--rad);
 }
